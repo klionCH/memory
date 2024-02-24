@@ -9,6 +9,32 @@
     background-position: center;
 }
 
-.card.flipped{
+.card.flipped {
+    background-image: url(./img/1.jpg);
+}
+
+.card.flipped._3,
+.card.flipped._4 {
     background-image: url(./img/2.png);
 }
+
+.card.flipped._5,
+.card.flipped._6 {
+    background-image: url(./img/3.jpg);
+}
+
+.card.flipped._7,
+.card.flipped._8 {
+    background-image: url(./img/4.jpg);
+}
+
+.card.flipped._9,
+.card.flipped._10 {
+    background-image: url(./img/5.jpg);
+}
+
+.card.flipped._11,
+.card.flipped._12 {
+    background-image: url(./img/6.jpg);
+}
+
