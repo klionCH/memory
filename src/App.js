@@ -3,13 +3,22 @@ import Card from './comp/Card.js';
 
 function App() {
   return (
-    <div className="App">
-      <Card />
-      <div className="field" />
-        <Card />
-        <Card />
-        <Card />
-    </div>
+      <div className="field">
+        <div><Card></Card></div>
+        <div><Card></Card></div>
+        <div><Card></Card></div>
+        <div><Card></Card></div>
+        <div><Card></Card></div>
+        <div><Card></Card></div>
+        <div><Card></Card></div>
+        <div><Card></Card></div>
+        <div><Card></Card></div>
+        <div><Card></Card></div>
+        <div><Card></Card></div>
+        <div><Card></Card></div>
+
+
+      </div>
   );
 }
 

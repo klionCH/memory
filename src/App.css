@@ -1,11 +1,17 @@
-table {
-  width: 100%;
+:root{
+  --gap: 20px;
 }
 
-
-#field{
+.field{
   display: grid;
-  grid-template-columns: repeat(1, 4fr);
-  gap: 10px;
-  justify-content: center;
+  grid-template-columns: auto auto auto auto;
+  width: 700px;
+  height: 550px;
+  background-color: #f2f2f2;
+  justify-content: space-around;
+  align-content: space-around;
+  border: black solid 1px;
 }
+
+
+

@@ -1,7 +1,12 @@
+
+
+
 .card{
-    width: 100px;
-    height: 100px;
+    height: 166px;
+    aspect-ratio: 1/1;
     background-image: url(./img/backside.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .card.flipped{
