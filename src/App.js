@@ -1,9 +1,12 @@
-import React from 'react';
 import './App.css';
 import Card from './comp/Card.js';
+import React, { useState } from 'react';
 
-const App = () => {
+
+function Cards() {
   const cardIds = Array.from({ length: 12 }, (_, index) => (index + 1).toString());
+  const [cardsMax, setCardsMax] = useState(0);
+
 
   const shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -11,24 +14,43 @@ const App = () => {
       [array[i], array[j]] = [array[j], array[i]];
     }
   };
+  shuffleArray(cardIds);
+
+  const cardClicked = (id) => {
+    console.log('Karte geklickt: ' + id);
+    setCardsMax((prevMax) => prevMax + 1);
+    console.log('Max: ' + cardsMax);
+  };
+
+
+  return(
+    <div className="field">
+      {cardIds.map((id) => (
+        <div key={id}>
+          <Card id={id} onClick={cardClicked} cardsMax={cardsMax}/>
+        </div>
+      ))}
+    </div>
+  );
+
+
+}
+
+function App() {
 
   
-
-  shuffleArray(cardIds);
+  const newGame = () => {
+    console.log('Neues Spiel');
+  };
 
   return (
     <div>
-      <div className="field">
-      {cardIds.map((id) => (
-        <div key={id}>
-          <Card id={id} />
-        </div>
-      ))}
-      </div>
-      <button>Neues Spiel</button>
+      <Cards/>
+      <button onClick={newGame}>Neues Spiel</button>
     </div>
 
   );
 };
 
 export default App;
+

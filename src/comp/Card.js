@@ -1,14 +1,21 @@
+
 import React, { useState } from 'react';
 import './card.css';
 
 const Card = (props) => {
   const [clicked, setClicked] = useState(false);
-  const {id} = props;
-
+  let {id, cardsMax} = props;
 
   const flipCard = () => {
-    setClicked(!clicked);
-    console.log('Karte geklickt');
+    if (cardsMax === 2) {
+      console.log('Max erreicht');
+      return;
+    } 
+      console.log("flipCard: 14: " + cardsMax)
+      setClicked(!clicked);
+      props.onClick(id);
+      console.log('Karte geklickt'); 
+
   };
 
 
