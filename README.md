@@ -6,14 +6,10 @@ A memory game built with React where players match pairs of cards.
 
 - [Introduction](#introduction)
 - [Features](#features)
-- [Getting Started](#getting-started)
 - [Game Rules](#game-rules)
 - [How to Play](#how-to-play)
 - [Demo](#demo)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
 
 ## Introduction
 
@@ -21,14 +17,8 @@ Welcome to the React Memory Game! This game challenges your memory skills as you
 
 ## Features
 
-- Responsive design
 - Card shuffling for each new game
 - Turn and matching counters
-- Win tracking
-
-## Getting Started
-
-To run the game locally, follow these steps:
 
 ## Game Rules
 
@@ -45,26 +35,10 @@ To run the game locally, follow these steps:
 4. If the cards do not match, they will flip face-down again.
 5. Continue until all pairs are matched.
 
-## Demo
-
-Include a link to a live demo or a few screenshots to showcase your game.
-
 ## Technologies Used
 
 - React
 - JavaScript
 - HTML
 - CSS
-
-## Contributing
-
-If you'd like to contribute to this project, please follow the [Contributing Guidelines](CONTRIBUTING.md).
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Acknowledgements
-
-Special thanks to [list any third-party libraries or resources used in your project].
 
