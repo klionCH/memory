@@ -127,7 +127,6 @@ function Cards({ gameKey }) {
     </div>
     <p>Matching Counter: {matchingCounter}</p>
     <p>Turns: {turns}</p>
-    <p>Wins: {wins}</p>
     </div>
   );
 }
