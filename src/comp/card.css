@@ -7,6 +7,8 @@
     background-image: url(./img/backside.jpg);
     background-size: cover;
     background-position: center;
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .card.flipped {

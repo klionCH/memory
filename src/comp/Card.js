@@ -16,10 +16,14 @@ const Card = (props) => {
 
   useEffect(() => {
     if (cardsMax === 2) {
+      if (props.isMatched) {
+        props.resetCardsMax();
+      } else {
       setTimeout(() => {
         setClicked(false);
         props.resetCardsMax();
-      }, 800);
+      }, 2000);
+    }
     }
   }, [cardsMax, props]);
   
